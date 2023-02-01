@@ -56,6 +56,7 @@ class _DetailsState extends State<Details> {
                   width: 500,
                   child: Column(
                     children: [
+
                       Text("id = ${posts[widget.counter2]["id"]}"),
                       Text("name = ${posts[widget.counter2]["name"]}"),
                       Text("email = ${posts[widget.counter2]["email"]}"),

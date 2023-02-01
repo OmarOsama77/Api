@@ -54,9 +54,16 @@ class ApiState extends State<Api> {
                 children: [
                   TextButton(
                       onPressed: (){
+                        setState(
+                            (){
+                              if(index>10){
 
-                        Navigator.of(context)
-                            .push(MaterialPageRoute(builder: (builder)=>Details(index)));
+                              }else{
+                                Navigator.of(context)
+                                    .push(MaterialPageRoute(builder: (builder)=>Details(index)));
+                              }
+                            }
+                        );
 
                       }, child:Text(posts[index]["title"]))
 
